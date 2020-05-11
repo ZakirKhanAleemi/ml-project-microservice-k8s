@@ -5,11 +5,11 @@
 # Step 1:
 # This is your Docker ID/path
 # dockerpath=<>
-ockerpath="zakirkhan/udacity-ml-app"
+dockerpath="zakirkhan/udacity-ml-app"
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run $dockerpath --image=zakirkhan/udacity-ml-app:v4 --port=80
+kubectl run $dockerpath --image=zakirkhan/udacity-ml-app --port=80
 
 
 # Step 3:
