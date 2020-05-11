@@ -11,9 +11,9 @@ dockerpath="zakirkhan/udacity-ml-app"
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker login &&\
-    docker image tag mlapi $dockerpath
+docker login --username zakirkhan
+docker tag udacity-ml-app zakirkhan/udacity-ml-app
 
 # Step 3:
 # Push image to a docker repository
-docker image push $dockerpath
+docker image push zakirkhan/udacity-ml-app
